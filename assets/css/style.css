@@ -328,7 +328,7 @@ img {
     font-size: 1.6rem;
     /* Reducido de 2rem */
     color: #555;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .font-black {
@@ -356,7 +356,7 @@ img {
     background-color: var(--color-primary);
     color: var(--color-white);
 
-    padding: 10px 10px 10px 35px;
+    padding: 15px 15px 15px 40px;
     /* Reducido */
     border-radius: 60px;
     text-decoration: none;
@@ -372,23 +372,23 @@ img {
 }
 
 .btn-hero-canva__text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     /* Reducido de 1.6rem */
     font-weight: 700;
     text-decoration: underline;
 }
 
 .btn-hero-canva__icon-circle {
-    width: 45px;
+    width: 50px;
     /* Reducido de 55px */
-    height: 45px;
+    height: 50px;
     background-color: #FFFFFF;
     color: var(--color-primary);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .hero-centered__experience {
@@ -595,7 +595,7 @@ img {
    ========================================= */
 
 .treatments {
-    padding: 80px 0;
+    padding: 120px 0;
     /* Reducido */
     background-color: var(--color-white);
 }
@@ -2245,7 +2245,7 @@ img {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        font-size: 4.8rem;
+        font-size: 5.5rem;
         margin-bottom: 40px;
     }
 
@@ -2260,7 +2260,7 @@ img {
         position: relative;
         overflow: visible;
         /* Permite que el badge salga */
-        margin-bottom: 60px;
+        margin-bottom: 100px;
     }
 
     .hero-centered__img {
@@ -2273,7 +2273,7 @@ img {
 
     .hero-centered__actions {
         margin-top: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .hero-centered__badge {
@@ -2327,7 +2327,7 @@ img {
     /* --- 5. TRATAMIENTOS --- */
     .treatments__grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 30px 10px;
     }
 
     .treatments__card {
@@ -2432,15 +2432,15 @@ img {
     }
 
     .footer-nav a {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .footer-label {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
 
     .footer-value {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .footer-copy {
@@ -2485,7 +2485,7 @@ img {
     .hero-centered__experience {
         font-size: 1.4rem;
         margin-top: 25px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     .hero-centered__subtitle {
@@ -2498,7 +2498,7 @@ img {
 
     .hero-centered__title {
         font-size: 4.5rem;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .hero-badge-img {
@@ -2539,6 +2539,9 @@ img {
     }
         .bio-badge {
         bottom: -70px;
+    }
+    .main-footer{
+        margin-top: 50px;
     }
 }
 
