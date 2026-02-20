@@ -1957,7 +1957,57 @@ img {
 .modal-body::-webkit-scrollbar-thumb:hover {
     background: var(--color-primary);
 }
+/* =========================================
+   MAPA PROFESIONAL (Imagen interactiva)
+   ========================================= */
+.map-link-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden; /* Mantiene la imagen dentro de los bordes curvos */
+}
 
+.location__map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* La capa oscura que está invisible por defecto */
+.location__map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 0, 24, 0.7); /* El color vino de la marca, transparente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    gap: 15px;
+    
+    opacity: 0; /* Oculto */
+    transition: opacity 0.3s ease;
+}
+
+.location__map-overlay i {
+    font-size: 3rem;
+}
+
+/* Efecto Hover: Mostramos la capa y hacemos un ligero zoom al mapa */
+.map-link-container:hover .location__map-overlay {
+    opacity: 1;
+}
+
+.map-link-container:hover .location__map-img {
+    transform: scale(1.05);
+}
 /* ==========================================================================
    RESPONSIVE: ESCALÓN 2 - "MINI DESKTOP" (Compacto -15%)
    ========================================================================== */
@@ -2070,6 +2120,9 @@ img {
 
     .top-bar__text,
     .top-bar__item span {
+        display: none;
+    }
+    .top-bar-link{
         display: none;
     }
 
